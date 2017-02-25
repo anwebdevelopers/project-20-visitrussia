@@ -1,0 +1,136 @@
+.footer {
+	padding: 70px 0 60px 0;
+	background-color: #1d2025;
+}
+.footer__wrapper {
+	@extend .container;
+	font-size: 0;
+	font-size: 0;
+	display: flex;
+	// flex-wrap: wrap;
+}
+.footer__social {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	flex-basis: 25%;
+	padding: 0 20px;
+}
+.footer__logo {
+	img {
+		width: 202px;
+		height: 42px;
+	}
+}
+.footer__social-box {
+	margin: 120px 0 0 0;
+}
+.footer__social-item {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 25px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	transition: color 0.3s ease-out;
+	&:hover, &:active, &:focus {
+		color: $mcl;
+	}
+}
+.footer__copy {
+	margin: 30px 0 0 0;
+	font-size: 13px;
+}
+
+.footer__about {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	flex-basis: 25%;
+	padding: 0 20px;
+}
+.footer__about-title {
+	padding: 10px 0 0 0;
+	margin: 0 0 35px 0;
+	font-size: 15px;
+	color: $mcl;
+	font-weight: 700;
+}
+.footer__about-text {
+	font-size: 14px;
+	line-height: 2;
+	p {
+		margin: 0;
+	}
+}
+
+.footer__nav {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	flex-basis: 25%;
+	padding: 0 20px 0 40px;
+}
+.footer__nav-title {
+	padding: 10px 0 0 0;
+	margin: 0 0 35px 0;
+	font-size: 15px;
+	color: $mcl;
+	font-weight: 700;
+}
+.footer__nav-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		a {
+			font-size: 14px;
+			line-height: 2.4;
+			text-decoration: none;
+			color: #fff;
+			font-weight: 500;
+			transition: color 0.3s ease-out;
+			&:hover, &:active, &:focus {
+				color: $mcl;
+			}
+		}
+	}
+}
+.footer__organiser {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	flex-basis: 25%;
+	padding: 0 20px;
+}
+.footer__organiser-title {
+	padding: 10px 0 0 0;
+	margin: 0 0 35px 0;
+	font-size: 15px;
+	color: $mcl;
+	font-weight: 700;
+}
+.footer__organiser-item {
+	margin: 0 0 15px 0;
+}
+.footer__organiser-item-name {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.footer__organiser-item-adress,
+.footer__organiser-item-phone,
+.footer__organiser-item-email {
+	font-size: 13px;
+}
+.footer__organiser-item-email {
+	a {
+		color: #575d66;
+		text-decoration: none;
+		transition: color 0.3s ease-out;
+		&:hover, &:active, &:focus {
+			color: $mcd;
+		}
+	}
+}

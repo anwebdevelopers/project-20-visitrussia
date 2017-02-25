@@ -1,0 +1,249 @@
+.about-forum {
+	padding: 140px 0;
+}
+.about-forum__wrapper {
+	@extend .container;
+}
+.about-forum__title {
+	position: relative;
+	padding: 0 0 35px 0;
+	text-transform: uppercase;
+	color: $hc;
+	text-align: center;
+	h1 {
+		margin: 0;
+		font-size: 70px;
+		font-weight: 800;
+		line-height: 1;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		width: 75px;
+		height: 5px;
+		margin-left: -37px;
+		background-color: $mcd;
+	}
+}
+.about-forum__undertitle {
+	margin: 30px 0 0 0;
+	text-align: center;
+	color: $shc;
+	h3 {
+		margin: 0;
+		font-size: 19px;
+	}
+}
+.about-forum__content {
+	@extend .clearfix;
+	margin: 30px 0 0 0;
+}
+.about-forum__content-right {
+	float: right;
+	width: 49%
+}
+.about-forum__content-left {
+	float: left;
+	width: 49%
+}
+.about-forum__slider {
+	.owl-nav {
+		margin: 30px 0 0 0;
+		text-align: center;
+		.owl-prev,
+		.owl-next {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 42px;
+			font-size: 50px;
+			line-height: 1;
+			color: #000;
+			transition: all .3s ease;
+			&:hover, &:active, &:focus {
+				transform: scale(1.1);
+				color: $mcd;
+			}
+		}
+		.owl-prev {
+			&:before {
+				content: '\e806';
+				font-family: "fontello";
+				  font-style: normal;
+				  font-weight: normal;
+				  speak: none;
+				 
+				  display: inline-block;
+				  text-decoration: inherit;
+				  width: 1em;
+				  margin-right: .2em;
+				  text-align: center;
+				  /* opacity: .8; */
+				 
+				  /* For safety - reset parent styles, that can break glyph codes*/
+				  font-variant: normal;
+				  text-transform: none;
+				 
+				  /* fix buttons height, for twitter bootstrap */
+				  line-height: 1em;
+				 
+				  /* Animation center compensation - margins should be symmetric */
+				  /* remove if not needed */
+				  margin-left: .2em;
+				 
+				  /* you can be more comfortable with increased icons size */
+				  /* font-size: 120%; */
+				 
+				  /* Font smoothing. That was taken from TWBS */
+				  -webkit-font-smoothing: antialiased;
+				  -moz-osx-font-smoothing: grayscale;
+			}
+		}
+		.owl-next {
+			&:before {
+				content: '\e805';
+				font-family: "fontello";
+				  font-style: normal;
+				  font-weight: normal;
+				  speak: none;
+				 
+				  display: inline-block;
+				  text-decoration: inherit;
+				  width: 1em;
+				  margin-right: .2em;
+				  text-align: center;
+				  /* opacity: .8; */
+				 
+				  /* For safety - reset parent styles, that can break glyph codes*/
+				  font-variant: normal;
+				  text-transform: none;
+				 
+				  /* fix buttons height, for twitter bootstrap */
+				  line-height: 1em;
+				 
+				  /* Animation center compensation - margins should be symmetric */
+				  /* remove if not needed */
+				  margin-left: .2em;
+				 
+				  /* you can be more comfortable with increased icons size */
+				  /* font-size: 120%; */
+				 
+				  /* Font smoothing. That was taken from TWBS */
+				  -webkit-font-smoothing: antialiased;
+				  -moz-osx-font-smoothing: grayscale;
+			}
+		}
+	}
+}
+.about-forum__slider-item {
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+.about-forum__text {
+	padding: 26px 0 0 0;
+	font-size: 14px;
+	p {
+		margin: 0 0 40px 0;
+	}
+}
+.about-forum__buttons {
+	padding: 35px 0 0 0;
+	text-align: center;
+	
+}
+.about-forum__button-reg {
+	background-color: $mcd;
+	
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+	
+	font-size: 12px;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: 2px solid $mcd;
+	letter-spacing: 2px;
+	transition: color .3s ease;
+	a 	{
+		display: block;
+		padding: 14px 30px;
+		position: relative;
+		z-index: 1;
+		color: #fff;
+		text-decoration: none;
+		transition: color 0.3s ease-out;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		right: 50%;
+		background-color: #fff;
+		transition: all 0.3s ease-out;
+	}
+
+	&:hover, &:active, &:focus {
+		a {
+			color: $mcd;
+		}
+		&:before {
+			left: 0;
+			right: 0;
+		}
+	}
+}
+.about-forum__button-press {
+	background-color: #fff;
+	
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+	
+	font-size: 12px;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: 2px solid $mcd;
+	letter-spacing: 2px;
+	transition: color .3s ease;
+	a 	{
+		display: block;
+		padding: 14px 30px;
+		position: relative;
+		z-index: 1;
+		color: #000;
+		text-decoration: none;
+		transition: color 0.3s ease-out;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		right: 50%;
+		background-color: $mcd;
+		transition: all 0.3s ease-out;
+	}
+
+	&:hover, &:active, &:focus {
+		a {
+			color: #fff;
+		}
+		&:before {
+			left: 0;
+			right: 0;
+		}
+	}
+}
